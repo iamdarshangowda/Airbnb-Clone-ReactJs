@@ -3,10 +3,9 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Cards from "./components/Cards";
 import "./index.css";
-
-import swimmer from "./components/images/swimmer.png";
 import bride from "./components/images/bride.png";
 import bike from "./components/images/bike.png";
+import swimmer from "./components/images/swimmer.png";
 
 export default function App() {
   return (
