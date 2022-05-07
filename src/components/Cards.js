@@ -1,31 +1,38 @@
 import React from "react";
 import "../index.css";
-import star from "./images/star.png";
 
 export default function Cards(props) {
   let openSpot;
-  if (props.openSpots === 0) {
+  if (props.item.openSpots === 0) {
     openSpot = "SOLD OUT";
-  } else if (props.location === "online") {
+  } else if (props.item.location === "online") {
     openSpot = "AVAILABLE";
   }
   return (
     <div className="card">
       {openSpot && <div className="badge">{openSpot}</div>}
-      <img src={props.img} alt="person-photo" className="card-img" />
+      <img
+        src={process.env.PUBLIC_URL + "/images/" + props.item.coverImg}
+        alt="person-photo"
+        className="card-img"
+      />
       <div className="ratings">
-        <img src={star} alt="star" className="star" />
+        <img
+          src={process.env.PUBLIC_URL + "/images/star.png"}
+          alt="star"
+          className="star"
+        />
         <p>
-          {props.rating}
+          {props.item.rating}
           <span className="lite-text">
-            ({props.reviewCount})•{props.location}
+            ({props.item.reviewCount})•{props.item.location}
           </span>
         </p>
       </div>
       <div className="card-text">
-        <p>{props.title}</p>
+        <p>{props.item.title}</p>
         <p>
-          <span className="bold">From ${props.price}</span>/ person
+          <span className="bold">From ${props.item.price}</span>/ person
         </p>
       </div>
     </div>

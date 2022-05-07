@@ -1,9 +1,12 @@
-Airbnb-Clone | <a href="https://beamish-biscuit-54a8fd.netlify.app/">DEMO</a>
+Airbnb-Clone | <a href="https://beamish-biscuit-54a8fd.netlify.app/" >DEMO</a>
 
 Learnt:
 
-1. Passing props in component instead of hardcoding data
-2. Conditional rendering
+1. Learnt about props
+2. Learnt abouts Data Flow through Props
+3. Used Array maps with JSX to create mutiple compnonents with different data
+4. Conditioning on HTML elements according to props Data
+5. Learnt about react-creat-app and use it to create a react project from scratch
 
 # Getting Started with Create React App
 
