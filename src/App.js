@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Cards from "./components/Cards";
+import "./index.css";
 
-function App() {
+import swimmer from "./components/images/swimmer.png";
+import bride from "./components/images/bride.png";
+import bike from "./components/images/bike.png";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Hero />
+      <div className="all-cards">
+        <Cards
+          img={swimmer}
+          rating={5.0}
+          reviewCount={6}
+          country="USA"
+          title="Life Lessons with Katie Zaferes"
+          price={136}
+        />
+        <Cards
+          img={bride}
+          rating={5.0}
+          reviewCount={30}
+          country="Online"
+          title="Learn Wedding Photography"
+          price={125}
+        />
+        <Cards
+          img={bike}
+          rating={4.8}
+          reviewCount={2}
+          country="Norway"
+          title="Group Mountain Biking"
+          price={50}
+        />
+      </div>
+      <a href="https://github.com/iamdarshangowda" className="credits">
+        created by darshan gowda
+      </a>
     </div>
   );
 }
-
-export default App;
