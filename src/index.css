@@ -54,6 +54,7 @@ section {
   font-weight: 300;
   font-size: 16px;
   line-height: 25px;
+  position: relative;
 }
 
 .star {
@@ -95,6 +96,16 @@ section {
   justify-content: center;
   margin-bottom: 10px;
   font-weight: 600;
+}
+
+.badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
 @media (min-width: 322px) {

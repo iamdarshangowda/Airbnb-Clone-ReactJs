@@ -3,7 +3,7 @@ Airbnb-Clone | <a href="https://beamish-biscuit-54a8fd.netlify.app/">DEMO</a>
 Learnt:
 
 1. Passing props in component instead of hardcoding data
-2. Other basic react things.
+2. Conditional rendering
 
 # Getting Started with Create React App
 

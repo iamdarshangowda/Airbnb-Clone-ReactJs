@@ -17,25 +17,28 @@ export default function App() {
           img={swimmer}
           rating={5.0}
           reviewCount={6}
-          country="USA"
+          location="USA"
           title="Life Lessons with Katie Zaferes"
           price={136}
+          openSpots={0}
         />
         <Cards
           img={bride}
           rating={5.0}
           reviewCount={30}
-          country="Online"
+          location="online"
           title="Learn Wedding Photography"
           price={125}
+          openSpots={12}
         />
         <Cards
           img={bike}
           rating={4.8}
           reviewCount={2}
-          country="Norway"
+          location="Norway"
           title="Group Mountain Biking"
           price={50}
+          openSpots={5}
         />
       </div>
       <a href="https://github.com/iamdarshangowda" className="credits">
